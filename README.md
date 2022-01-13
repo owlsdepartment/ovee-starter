@@ -3,7 +3,7 @@
 To scaffold the project use this commands:
 
 ```bash
-degit owlsdepartment/ovee-starter my-project
+npx degit owlsdepartment/ovee-starter my-project
 
 cd my-project
 # isntall dependencies
