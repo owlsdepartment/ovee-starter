@@ -1,0 +1,19 @@
+{
+  "name": "ovee-starter-tmp",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-decorators": "^7.16.7",
+    "vite": "^2.7.2",
+    "vite-plugin-babel": "^1.0.0"
+  },
+  "dependencies": {
+    "ovee.js": "^2.1.8"
+  }
+}
