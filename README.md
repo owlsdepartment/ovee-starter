@@ -6,8 +6,9 @@ To scaffold the project use this commands:
 npx degit owlsdepartment/ovee-starter my-project
 
 cd my-project
-# isntall dependencies
+# install dependencies
 yarn
+# and run it!
 yarn dev # or serve
 ```
 
