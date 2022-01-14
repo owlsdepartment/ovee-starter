@@ -1,0 +1,22 @@
+@import 'variables'; 
+
+@mixin link-hover {
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -2px;
+        left: 0;
+        height: 1px;
+        background-color: currentColor;
+        transform: scaleX(0);
+        transition: transform $transition_default;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+    }
+}

@@ -1,0 +1,110 @@
+@import 'variables';
+@import 'button-reset';
+
+@mixin reactivity-button {
+    height: 4rem;
+    padding: 1rem 3rem;
+    color: $color_light;
+    border-radius: 6px;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $color_dark;
+        transition: transform $transition_default;
+        border-radius: 6px;
+        z-index: -1;
+    }
+
+    &:hover::before {
+        transform: scale(1.1);
+    }
+
+    &:active::before {
+        transform: scale(0.95);
+    }
+}
+
+.reactivity {
+    &__title {
+        margin-bottom: 8rem;
+    }
+
+    &__input-wrapper {
+        display: flex;
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    &__input {
+        border: none;
+        border-bottom: 1px solid $color_dark;
+        background-color: transparent;
+        font-size: 2rem;
+        outline: none;
+        padding: 0.8rem 0;
+        width: 40rem;
+    }
+
+    &__add-task {
+        @include button-reset;
+        @include reactivity-button;
+
+        margin-left: 2rem;
+        font-size: 1.6rem;
+    }
+}
+
+.tasks-list {
+    &__task {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+
+        & + & {
+            border-top: 1px solid $color_font;
+        }
+    }
+
+    &__title {
+        transition: opacity $transition_default;
+
+        .tasks-list__task--done & {
+            opacity: 0.2;
+        }
+    }
+
+    &__buttons {
+        margin-left: 4rem;
+    }
+
+    &__button {
+        @include button-reset;
+
+        font-size: 1.6rem;
+
+        & + & {
+            margin-left: 1rem;
+        }
+
+        &--remove {
+            @include link-hover;
+
+            color: $color_error;
+        }
+
+        &--done {
+            @include reactivity-button;
+
+            width: 12rem;
+            text-align: center;
+        }
+    }
+}

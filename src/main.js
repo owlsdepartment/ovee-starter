@@ -1,4 +1,5 @@
-import '../style.css';
+import '~/styles/style.css';
+import '~/styles/main.scss';
 
 import { App } from 'ovee.js'
 import components from './components';

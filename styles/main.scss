@@ -1,0 +1,54 @@
+// Or preprocessorcs like SASS/SCSS
+
+@import 'variables';
+@import 'typography';
+@import 'app-header';
+@import 'link-hover';
+@import 'reactivity';
+
+.main {
+    min-height: calc(100vh - #{$header_height});
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem #{$app_side_padding};
+    box-sizing: border-box;
+
+    &--reactivity {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    a {
+        @include link-hover;
+
+        color: $color_primary;
+        text-decoration: none;
+
+        &::after {
+            bottom: 2px;
+        }
+    }
+
+    b {
+        color: $color_primary;
+    }
+
+    hello-world {
+        margin-bottom: 10rem;
+    }
+
+    &__title {
+        font-size: 7rem;
+    }
+
+    &__description {
+        margin-top: 3.2rem;
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 90rem;
+    }
+}

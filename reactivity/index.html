@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ovee App</title>
+</head>
+
+<body id="app">
+	<app-header></app-header>
+
+	<main class="main main--reactivity reactivity">
+		<div class="main__content">
+			<h2 class="reactivity__title">
+				Reactive ToDo List
+			</h2>
+
+			<div class="reactivity__example" data-reactivity-example>
+				<form class="reactivity__input-wrapper">
+					<input class="reactivity__input" type="text" name="task" placeholder="Write your task">
+
+					<button class="reactivity__add-task" type="submit">
+						Add task
+					</button>
+				</form>
+
+				<tasks-list class="tasks-list"></tasks-list>
+			</div>
+		</div>
+	</main>
+
+	<script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@import 'variables';
+@import 'link-hover';
+
+.app-header {
+    height: $header_height;
+    padding: 2rem $app_side_padding;
+    // border-bottom: 1px solid #333333;
+    display: flex;
+    color: $color_light;
+    background-color: $color_dark;
+    box-sizing: border-box;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        @include link-hover;
+
+        font-size: 2.4rem;
+
+        & + & {
+            margin-left: 6rem;
+        }
+
+        &--current {
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+    }
+}

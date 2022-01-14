@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ovee App</title>
-  </head>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ovee App</title>
+</head>
 
-  <body>
-    <div id="app"></div>
+<body id="app">
+	<app-header></app-header>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+	<main class="main">
+		<div class="main__content">
+			<h1 class="main__title">
+				Ovee Starter
+			</h1>
+	
+			<!-- changing data-name will change message -->
+			<hello-world data-name="stranger"></hello-world>
+	
+			<h4 class="main__description">
+				This project uses <b>Ovee</b> with <a href="https://vitejs.dev" target="_blank">Vite</a> for quick and simple setup
+				<br>
+				To easily add <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> or other tools - follow <a href="https://vitejs.dev/guide/features.html" target="_blank">Vite docs</a>
+				<br>
+				<br>
+				For full Ovee documentation
+	
+				<a class="main__docs" href="https://owlsdepartment.github.io/ovee/" target="_blank">
+					click here
+				</a>
+			</h4>
+		</div>
+	</main>
+
+	<script type="module" src="/src/main.js"></script>
+</body>
 </html>
