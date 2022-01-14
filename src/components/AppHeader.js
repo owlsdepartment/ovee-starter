@@ -4,7 +4,7 @@ import { register, TemplateComponent } from "ovee.js";
 export class AppHeader extends TemplateComponent {
     links = [
         { url: '', name: 'Home' },
-        { url: 'reactivity', name: 'Reactivity' },
+        { url: 'reactivity', name: 'ToDo List' },
     ];
 
     currentPath = document.location.pathname;
