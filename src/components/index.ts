@@ -3,9 +3,9 @@ import { HelloWorld } from "./HelloWorld";
 import { ReactivityExample } from "./ReactivityExample";
 import { TasksList } from "./TasksList";
 
-export default [
-    HelloWorld,
+export default {
     AppHeader,
-    TasksList,
-    ReactivityExample
-];
+    HelloWorld,
+    ReactivityExample,
+    TasksList
+}

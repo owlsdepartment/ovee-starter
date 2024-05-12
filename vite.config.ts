@@ -1,12 +1,10 @@
 import { defineConfig } from 'vite';
-import babel from 'vite-plugin-babel';
 import path from 'path';
 
 export default defineConfig({
-    plugins: [
-        babel()
-    ],
-
+	esbuild: {
+		jsxDev: false
+	},
     resolve: {
 		alias: {
 			// pre-configured aliases, change them freely!

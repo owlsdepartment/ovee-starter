@@ -1,5 +1,6 @@
 {
   "name": "ovee-starter",
+  "type": "module",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -8,14 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.7",
-    "@babel/plugin-proposal-class-properties": "^7.16.7",
-    "@babel/plugin-proposal-decorators": "^7.16.7",
+    "@types/node": "^20.12.11",
     "sass": "^1.48.0",
-    "vite": "^2.7.2",
-    "vite-plugin-babel": "^1.0.0"
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
   },
   "dependencies": {
-    "ovee.js": "^2.1.8"
+    "ovee.js": "^3.0.0-alpha.2"
   }
 }

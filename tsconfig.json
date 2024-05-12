@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "declaration": true,
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "lib": ["ES2017", "ES7", "ES6", "DOM"],
+        "target": "ESNext",
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "experimentalDecorators": true,
+        "jsx": "react-jsx",
+        "jsxImportSource": "ovee.js",
+        "paths": {
+            "@/*": ["src/*"],
+            "~/*": ["./*"]
+        }
+    }
+}
