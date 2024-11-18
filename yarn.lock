@@ -356,10 +356,10 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
 
-ovee.js@^3.0.0-alpha.2:
-  version "3.0.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/ovee.js/-/ovee.js-3.0.0-alpha.2.tgz#f7c8f2d15fcd9cd320f62999f34af41afabe030b"
-  integrity sha512-BzC/p443DQj24xWZiVr2DINQVfnbjlDgtVBAa38MwT9mLeITW9+7/P5iEnJ8yvSZgZ9r/Axx8L3/TSd+mntXxg==
+ovee.js@^3.0.0-alpha.7:
+  version "3.0.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/ovee.js/-/ovee.js-3.0.0-alpha.7.tgz#0bee4d7c8c75d2b36ab0623b9ede8140d17d3dc7"
+  integrity sha512-9ktfoYyTwJb7DPyHSNtF46lLuo3KYIb7t4NnT/feJw5yfo6HLoYerL6e4mz1VggGf7lrQ7SVJaV3d84CnEVIlg==
   dependencies:
     "@vue/reactivity" "^3.4.15"
     "@vue/runtime-core" "^3.4.15"
